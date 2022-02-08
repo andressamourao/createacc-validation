@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Interactive Crate Account Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create account</h2>
+      </div>
+
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="superusername" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="hello@email.com" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+          <small>message</small>
+          <i class="far fa-eye" id="toggleEye" onclick="showPassword()"></i>
+        </div>
+
+        <div class="form-control">
+          <label for="cfrm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="cfrm-password"
+            placeholder="Enter Password again"
+          />
+          <small>Error message</small>
+          <i class="far fa-eye" id="toggleEye2" onclick="showPassword2()"></i>
+        </div>
+
+        <button>All done!</button>
+      </form>
+    </div>
+
+    <!-- avoid 'uncaught typeError': cannot set property '*****' of null -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
